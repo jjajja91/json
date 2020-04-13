@@ -78,8 +78,6 @@ public class Dao {
 		JSONObject object = new JSONObject();
 		object.put("studentArr", newArray);
 		object.put("seq", jsonObject.get("seq"));
-
-		System.out.println(object.toString(2));
 		try {
 			writer = new FileWriter(pathname);
 		} catch (IOException e) {
